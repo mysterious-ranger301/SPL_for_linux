@@ -1,3 +1,5 @@
 # SPL_for_linux
-Linux version for SPL. Command line functions will be commented, so just uncomment and replace them with the appropriate functions.
-This is version 1.0.4
+Working SPL version for Linux! Additional module required: "os" and "subprocess"
+How to use in original SPL (see github.com/mysterious-ranger301/SPL)
+This is version 1.1.3
+Older versions in "old" branch
