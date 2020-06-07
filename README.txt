@@ -1,4 +1,4 @@
-# SPL_for_linux
+SPL_for_linux
 Working SPL version for Linux! Additional module required: "os" and "subprocess"
 This is version 1.1.3
 How to use:
