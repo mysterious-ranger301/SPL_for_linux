@@ -27,7 +27,7 @@ class cmd:
         self.SplError = SplError
         self.err_file_path = 'File path not found.'
         self.err_app_path = 'App path not found.'
-        self.linux_err = 'Linux version. Command line is disabled.'
+        #self.linux_err = 'Linux version. Command line is disabled.'
     def _ls(self):
 #        self.cmd('ls')
 #        raise self.SplError(self.linux_err)
