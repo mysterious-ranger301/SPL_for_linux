@@ -1,6 +1,6 @@
 SPL_for_linux
 Working SPL version for Linux! Additional module required: "os" and "subprocess"
-This is version 1.1.3
+This is version 1.1.5
 How to use:
 import SPL_for_linux as SPL # import the module
 myspl = SPL.splObj() # set myspl as an SPL class
@@ -11,6 +11,7 @@ myspl._ls() # displays files/folders in current directory
 myspl._cd(folder) # moves working directory into "folder"
 myspl.cmd(command) # uses os.system() to use command line
 myspl._cmdOpenFile(file, path='.') # uses command line to open file
+myspl._cmdSudoNano(file) # uses sudo nano to open files! (and make new ones)
 myspl._pwm() # displays current working dir
 myspl.checkpath(path) # same as os.path.exists
 myspl.openWithApp(file, app) # opens file with app (enter path of both file and app)
