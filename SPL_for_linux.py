@@ -23,7 +23,7 @@ class cmd:
 #        self.__author__ = spl.__author__
         self.__instructions__ = '''Unlike SPL, the cmd() class uses the command line to do things. SPL's Open() function (which was removed) isn't reliable for opening files with extensions like .mp4, .mp3, or .wav. Use the _cmdOpenFile(file, path) instead. Syntax of _cmdOpenFile(file, path): where 'file' is the name of the file you want to open (with the extension). You don't need to specify 'path', its default value is '.'. The cmd() and SPL() libraries are linked together, so you can use all the functions from both cmd() and SPL().'''
         self.__author__ = 'Mysterious Ranger'
-        self.__version__ = '1.1.4'
+        self.__version__ = '1.1.5'
         self.SplError = SplError
         self.err_file_path = 'File path not found.'
         self.err_app_path = 'App path not found.'
@@ -49,6 +49,8 @@ class cmd:
 #        self.cmd('xdg-open "{0}"'.format(file))
         self.cmd('see {0}'.format(file)) # sp's call function not reliable
 #        raise self.SplError(self.linux_err)
+    def _cmdSudoNano(self, file):
+	self.cmd('sudo nano {0}'.format(file))
     def _pwm(self):
         return os.getcwd()
     def checkpath(self, path):
