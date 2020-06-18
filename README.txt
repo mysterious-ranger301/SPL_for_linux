@@ -12,6 +12,8 @@ myspl._cd(folder) # moves working directory into "folder"
 myspl.cmd(command) # uses os.system() to use command line
 myspl._cmdOpenFile(file, path='.') # uses command line to open file
 myspl._cmdSudoNano(file) # uses sudo nano to open files! (and make new ones)
+NOTE: Command line functions (or functions that use command line) don't show up in interactive shell for some reason (that's
+getting fixed)
 myspl._pwm() # displays current working dir
 myspl.checkpath(path) # same as os.path.exists
 myspl.openWithApp(file, app) # opens file with app (enter path of both file and app)
